@@ -1,6 +1,7 @@
 {
   "name": "stencil-components",
   "version": "0.0.1",
+  "homepage": "https://pavel-kru.github.io/stock-price-search/",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
   "module": "dist/custom-elements/index.js",
@@ -19,10 +20,13 @@
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
-    "@stencil/core": "^2.7.0"
+    "@stencil/core": "^2.7.0",
+    "gh-pages": "^3.2.3"
   },
   "devDependencies": {
     "@stencil/sass": "^1.4.1",
