@@ -1,0 +1,24 @@
+@import "../../global";
+
+.button {
+  background-color: $primary-color;
+  color: $white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1em;
+  border-color: transparent;
+  font-weight: 500;
+  font-family: sans-serif;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(to right bottom, $primary-color, $dark-blue);
+    box-shadow: 4px 4px 7px 2px rgba($black, 0.6);
+  }
+  &:disabled {
+    background: linear-gradient(to bottom, $lightgrey, $grey);
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+}

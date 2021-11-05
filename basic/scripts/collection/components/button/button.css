@@ -1,0 +1,21 @@
+button {
+  background-color: #42a5f5;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1em;
+  border-color: transparent;
+  font-weight: 500;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(to right bottom, #42a5f5, #095391);
+}
+
+button:disabled {
+  background: linear-gradient(to bottom, lightgrey, rgb(156, 153, 153));
+  cursor: not-allowed;
+}

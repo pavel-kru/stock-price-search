@@ -1,0 +1,25 @@
+$primary-color: #42a5f5;
+$dark-blue: #095391;
+$red: red;
+$blueviolet: blueviolet;
+$dark-pink: #6b096b;
+$white: #ffffff;
+$black: #000000;
+$grey: rgb(156, 153, 153);
+$lightgrey: #d3d3d3;
+$lazur: rgb(9, 223, 238);
+
+:root {
+  --primary-color: #42a5f5;
+  --text-color: #323232;
+}
+
+:host-context(.light-theme) {
+  --button-background-color: #{$primary-color};
+  --button-color: #{$white};
+}
+
+:host-context(.dark-theme) {
+  --button-background-color: #424242;
+  --button-color: #{$primary-color};
+}

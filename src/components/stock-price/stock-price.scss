@@ -1,0 +1,50 @@
+@import "../../global";
+
+:host {
+  font-family: sans-serif;
+  border: 2px solid $dark-pink;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 1rem;
+  display: block;
+  width: 20rem;
+  max-width: 100%;
+
+  h1 {
+    font-size: 1.1rem;
+  }
+  form {
+    input {
+      font: inherit;
+      padding: 0.3rem 0.25rem;
+      display: block;
+      margin-bottom: 0.5rem;
+      border-radius: 4px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      &.error {
+        border: 1px solid $red;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button.sc-my-button {
+      height: 35px;
+      padding: 0 10px;
+      margin-bottom: 30px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+:host(.error) {
+  border-color: $red;
+}
+
+.error {
+  color: $red;
+}
