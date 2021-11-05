@@ -1,0 +1,74 @@
+:root {
+  --primary-color: #42a5f5;
+  --text-color: #323232;
+}
+
+:host-context(.light-theme) {
+  --button-background-color: #42a5f5;
+  --button-color: #ffffff;
+}
+
+:host-context(.dark-theme) {
+  --button-background-color: #424242;
+  --button-color: #42a5f5;
+}
+
+:host {
+  font-family: sans-serif;
+  border: 2px solid #6b096b;
+  margin: auto;
+  padding: 1rem;
+  display: block;
+  width: 20rem;
+  max-width: 100%;
+}
+:host h1 {
+  font-size: 1.1rem;
+}
+:host form input {
+  font: inherit;
+  padding: 0.3rem 0.25rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+:host form input:focus {
+  outline: none;
+}
+:host form button.sc-my-button {
+  height: 35px;
+  padding: 0 10px;
+  margin-bottom: 30px;
+}
+:host form button.sc-my-button:focus {
+  outline: none;
+}
+:host ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+:host ul li {
+  margin: 0 0 10px 0;
+  padding: 0.25rem;
+  width: 100%;
+  border: 1px solid #6b096b;
+  border-radius: 4px;
+}
+:host ul li:hover, :host ul li:active {
+  cursor: pointer;
+  background-color: #6b096b;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px 1px blueviolet;
+}
+
+:host(.error) {
+  border-color: red;
+}
+
+.error {
+  color: red;
+}
